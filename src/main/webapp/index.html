@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>calci</title>
+  <h3>
+    Supriyasnehal
+  </h3>
+</head>
+<body>
+  <script>
+    function add() {
+    var n1=document.getElementById("no1").value;
+     var n2=document.getElementById("no2").value;
+    var sum=+n1 + +n2;
+    document.getElementById("result").innerText=sum;
+      alert(sum);
+    
+    }
+     function sub() {
+    var n1=document.getElementById("no1").value;
+     var n2=document.getElemenById("no2").value;
+    var subt=+n1 - +n2;
+       document.getElementById("result").innerText=subt;
+  alert(subt);
+      
+    }
+  </script>
+<form>
+  Enter number1: <input type="number" id="no1" required>
+   Enter number2: <input type="number" id="no2" required>
+  
+  <input type="button" value="Add" onclick="add();">
+ <input type="button" value="subtract" onclick="sub();">
+  <div id="result">
+    
+  </div>
+  </form>
+   
+</body>
+</html>
